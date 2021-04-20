@@ -21,7 +21,7 @@ class ExpenseEdit extends Component
         'amount' => 'required',
         'type' => 'required',
         'description' => 'required',
-        'photo' => 'image'
+        'photo' => 'image|nullable'
     ];
 
     //metodo livewire para obter o objeto na montagem

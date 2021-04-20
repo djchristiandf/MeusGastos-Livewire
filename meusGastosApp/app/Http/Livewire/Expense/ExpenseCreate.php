@@ -21,7 +21,7 @@ class ExpenseCreate extends Component
         'amount' => 'required',
         'type' => 'required',
         'description' => 'required',
-        'photo' => 'image'
+        'photo' => 'image|nullable'
     ];
 
     public function createExpense()
