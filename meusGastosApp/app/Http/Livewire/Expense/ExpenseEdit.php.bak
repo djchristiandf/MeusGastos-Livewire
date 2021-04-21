@@ -40,7 +40,7 @@ class ExpenseEdit extends Component
          {
             if(Storage::disk('public')->exists($this->expense->photo))
                 Storage::disk('public')->delete($this->expense->photo);
-
+            
                 $this->photo = $this->photo->store('expenses-photos', 'public');
          }
         $this->expense->update([

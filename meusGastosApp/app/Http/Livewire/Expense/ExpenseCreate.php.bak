@@ -8,8 +8,8 @@ use Livewire\WithFileUploads;
 
 class ExpenseCreate extends Component
 {
-    use WithFileUploads;
-    // e uma trait raits are a great way
+    use WithFileUploads; 
+    // e uma trait raits are a great way 
     //to re-use functionality between multiple Livewire components.
 
     public $amount;
@@ -44,7 +44,7 @@ class ExpenseCreate extends Component
         ]);
 
         session()->flash('message', 'Registro criado com sucesso!');
-
+        
         //alunar os valores, limpar campo em cascata
         $this->amount = $this->type = $this->description = null;
     }
